@@ -1,10 +1,17 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld'
+import Person from './components/Person';
 
 function App() {
+
+  const nome = "Léozin";
+
   return (
     <div className="App">
-      <HelloWorld />
+      <Person
+      name="Rodrigo"
+      age="20"
+      job="Developer"
+      picture="https://via.placeholder.com/150"/>
     </div>
   );
 }
