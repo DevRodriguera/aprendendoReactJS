@@ -1,7 +1,9 @@
+import styles from './Person.module.css'
+
 function Person({name, age, job, picture}){
 
     return(
-        <div>
+        <div className={styles.personContainer}>
             <img src={picture} alt={name}/>
             <h2>Name: {name}</h2>
             <p>Age: {age}</p>

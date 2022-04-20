@@ -3,7 +3,11 @@ import Person from './components/Person';
 
 function App() {
 
-  const nome = "Léozin";
+  const name = "Cleitin";
+  const age = "100";
+  const job = "Fazedor de programas";
+  const picture = "https://via.placeholder.com/150";
+
 
   return (
     <div className="App">
@@ -11,7 +15,14 @@ function App() {
       name="Rodrigo"
       age="20"
       job="Developer"
-      picture="https://via.placeholder.com/150"/>
+      picture=""/>
+
+<Person
+      name={name}
+      age={age}
+      job={job}
+      picture={picture}/>
+      
     </div>
   );
 }
