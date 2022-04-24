@@ -1,5 +1,6 @@
 import './App.css';
 import Person from './components/Person';
+import List from './components/List'
 
 function App() {
 
@@ -8,20 +9,15 @@ function App() {
   const job = "Fazedor de programas";
   const picture = "https://via.placeholder.com/150";
 
-
   return (
     <div className="App">
       <Person
-      name="Rodrigo"
-      age="20"
-      job="Developer"
-      picture=""/>
-
-<Person
       name={name}
       age={age}
       job={job}
       picture={picture}/>
+
+      <List/>
       
     </div>
   );
